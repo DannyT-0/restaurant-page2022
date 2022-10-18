@@ -13,13 +13,4 @@ function createAbout() {
 	return contentDiv;
 }
 
-const aboutBtn = document.querySelector(".about");
-aboutBtn.addEventListener("click", () => {
-	const menuContent = document.querySelector(".contentMenu");
-	menuContent.remove();
-	// const pageTitle = document.querySelector(".title");
-	// pageTitle.remove();
-	// const pageInfo = document.querySelector(".info");
-	// pageInfo.remove();
-	createAbout();
-});
+export default createAbout;

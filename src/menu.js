@@ -45,13 +45,4 @@ function createMenu() {
 	return contentDiv;
 }
 
-const menuBtn = document.querySelector(".menu");
-menuBtn.addEventListener("click", () => {
-	const pageTitle = document.querySelector(".title");
-	pageTitle.remove();
-	const pageInfo = document.querySelector(".info");
-	pageInfo.remove();
-	// const aboutContent = document.querySelector(".contentAbout");
-	// aboutContent.remove();
-	createMenu();
-});
+export default createMenu;

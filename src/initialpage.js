@@ -24,6 +24,7 @@ function createButton() {
 	const listContainer = document.createElement("ul");
 	menuBar.appendChild(listContainer);
 	const menubarMain = document.createElement("button");
+	menubarMain.classList.add("main");
 	menubarMain.innerText = "Main Page";
 	const menubarMenu = document.createElement("button");
 	menubarMenu.classList.add("menu");
@@ -34,11 +35,6 @@ function createButton() {
 	menuBar.appendChild(menubarMain);
 	menuBar.appendChild(menubarMenu);
 	menuBar.appendChild(menubarAbout);
-	menubarMain.addEventListener("click", () => {
-		const menuContent = document.querySelector(".contentMenu");
-		menuContent.remove();
-		createHeader();
-	});
 
 	return menuBar;
 }
@@ -48,4 +44,4 @@ function loadInitialPage() {
 	createHeader();
 }
 
-loadInitialPage();
+export default loadInitialPage;
